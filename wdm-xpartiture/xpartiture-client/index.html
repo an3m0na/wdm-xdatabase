@@ -1,0 +1,118 @@
+<!--[if lt IE 7]>      <html xmlns="http://www.w3.org/1999/xhtml" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html xmlns="http://www.w3.org/1999/xhtml" class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html xmlns="http://www.w3.org/1999/xhtml" class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>XPartiture</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"/>
+        <script src="js/vendor/spin.min.js"/>
+        <script src="js/vendor/MIDI.min.js"/>
+        <script src="js/vendor/Base64.js"/>
+        <script src="js/vendor/base64binary.js"/>
+        <script src="js/vendor/replayer.js"/>
+        <script src="js/vendor/midifile.js"/>
+        <script src="js/vendor/stream.js"/>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"/>
+                        <span class="icon-bar"/>
+                        <span class="icon-bar"/>
+                    </button>
+                    <a class="navbar-brand" href="#">XPartiture</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="btn_back">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-chevron-left">
+                                    <strong>Back</strong>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/.navbar-collapse -->
+            </div>
+        </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Welcome to XPartiture!</h1>
+                <p>Our collection of music sheets awaits!</p>
+                <p>
+                    <a id="btn_go" class="btn btn-primary btn-lg" role="button">Get Started</a>
+                </p>
+            </div>
+        </div>
+        <div id="div_main" class="container-fluid">
+            <h1 id="heading"/>
+            <div id="div_archive" class="list-group"/>
+            <div id="div_score" class="row">
+                <div class="col-md-6">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#tab_pdf" data-toggle="tab">Score</a>
+                        </li>
+                        <li>
+                            <a href="#tab_lily" data-toggle="tab">LilyPond</a>
+                        </li>
+                        <li>
+                            <a href="#tab_midi" data-toggle="tab">Sound</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_pdf"/>
+                        <div class="tab-pane" id="tab_lily">
+                            <textarea id="text_score" class="form-control" rows="20"/>
+                        </div>
+                        <div class="tab-pane text-center" id="tab_midi" style="padding-top:30px">
+                            <div id="group_sound" class="btn-group btn-group-lg">
+                                <button id="btn_play" type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-play"/>
+                                </button>
+                                <button id="btn_pause" type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-pause"/>
+                                </button>
+                                <button id="btn_stop" type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-stop"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="div_details" class="col-md-6"/>
+            </div>
+        </div>
+        <div id="modal_converting" class="modal fade" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="text-align: center">
+                        <h3>Converting MusicXML to Lilypond format...</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div style="height:200px">
+                            <span id="searching_spinner_center" style="position: absolute;display: block;top: 50%;left: 50%;"/>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="text-align: center"/>
+                </div>
+            </div>
+        </div>
+        <script src="js/vendor/jquery-1.11.0.js"/>
+        <script src="js/vendor/bootstrap.min.js"/>
+        <script src="js/main.js"/>
+    </body>
+</html>

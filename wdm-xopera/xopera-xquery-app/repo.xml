@@ -1,0 +1,12 @@
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>XOperaApp</description>
+    <author/>
+    <website/>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>XOperaApp</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+</meta>
