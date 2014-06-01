@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.exist-db:xmlrpc-common:2.0-tech-preview">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/exist-db/xmlrpc-common/2.0-tech-preview/xmlrpc-common-2.0-tech-preview.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/exist-db/xmlrpc-common/2.0-tech-preview/xmlrpc-common-2.0-tech-preview-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/exist-db/xmlrpc-common/2.0-tech-preview/xmlrpc-common-2.0-tech-preview-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
